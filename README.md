@@ -1,3 +1,4 @@
-### Girder Chameleon Plugin
+### ECE 508 Project
 
-This plugin provides a web interface for the Chameleon package. It is intended to be used in conjunction with the [Girder](https://girder.readthedocs.io/en/latest/) data management platform.
+Project repo for ECE 508
+
