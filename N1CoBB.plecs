@@ -928,15 +928,6 @@ Plecs {
     }
     Component {
       Type          Ammeter
-      Name          "Am1"
-      Show          on
-      Position      [665, 380]
-      Direction     up
-      Flipped       off
-      LabelPosition west
-    }
-    Component {
-      Type          Ammeter
       Name          "Am2"
       Show          on
       Position      [400, 255]
