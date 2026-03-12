@@ -53,7 +53,7 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 22; 1382, 773]
+    Location      [370, 143; 1752, 894]
     ZoomFactor    1.14437
     SliderPosition [37, 0]
     ShowBrowser   off
@@ -125,7 +125,7 @@ Plecs {
       LabelPosition west
       Parameter {
         Variable      "C"
-        Value         "100e-3"
+        Value         "1e-6"
         Show          off
       }
       Parameter {
@@ -656,7 +656,7 @@ Plecs {
       }
       Parameter {
         Variable      "DutyCycle"
-        Value         "0.5"
+        Value         "0.7"
         Show          off
       }
       Parameter {
@@ -698,15 +698,15 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 25; 1382, 847]
+      Location      [208, 108; 1590, 1029]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAANYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABOAP///wAABWYAAAMbAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAABWYAAAN+AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":63,\"Labels\":[],"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":183,\"Labels\":[],"
 "\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
 "AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
@@ -716,7 +716,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -880,7 +880,7 @@ Plecs {
       LabelPosition south
       Parameter {
         Variable      "Tag"
-        Value         "Switch"
+        Value         "Test"
         Show          off
       }
       Parameter {
@@ -960,6 +960,30 @@ Plecs {
       Parameter {
         Variable      "R"
         Value         "1e-9"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto4"
+      Show          off
+      Position      [785, 225]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "Test"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
         Show          off
       }
     }
@@ -1098,13 +1122,6 @@ Plecs {
         DstComponent  "R1"
         DstTerminal   1
       }
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Logical\nOperator3"
-      SrcTerminal   1
-      DstComponent  "S1'"
-      DstTerminal   3
     }
     Connection {
       Type          Signal
@@ -1300,6 +1317,20 @@ Plecs {
       SrcTerminal   2
       DstComponent  "S1'"
       DstTerminal   2
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Logical\nOperator3"
+      SrcTerminal   1
+      Points        [715, 225]
+      Branch {
+        DstComponent  "S1'"
+        DstTerminal   3
+      }
+      Branch {
+        DstComponent  "Goto4"
+        DstTerminal   1
+      }
     }
   }
 }
