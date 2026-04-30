@@ -53,9 +53,9 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 27; 1920, 993]
-    ZoomFactor    1.26332
-    SliderPosition [156, 161]
+    Location      [9, 32; 1911, 980]
+    ZoomFactor    0.842982
+    SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -144,7 +144,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "V"
-        Value         "100"
+        Value         "10"
         Show          off
       }
     }
@@ -2085,7 +2085,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "1"
+        Value         "10"
         Show          off
       }
     }
@@ -2767,11 +2767,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 23; 1920, 1011]
+      Location      [0, 27; 1920, 1024]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAAB4AAAAPBAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABSAP///wAAB4AAAAPKAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2784,7 +2784,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -2904,7 +2904,7 @@ Plecs {
       }
       Parameter {
         Variable      "Frequency"
-        Value         "50000"
+        Value         "100"
         Show          off
       }
       Parameter {
@@ -3059,7 +3059,7 @@ Plecs {
       }
       Parameter {
         Variable      "T_period"
-        Value         "0.0000005"
+        Value         "0.0002"
         Show          off
       }
       Parameter {
