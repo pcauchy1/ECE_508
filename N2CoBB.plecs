@@ -2431,7 +2431,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "Tag"
-        Value         "Vout"
+        Value         "Current"
         Show          off
       }
       Parameter {
@@ -2534,7 +2534,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "Tag"
-        Value         "Vref"
+        Value         "Vfly"
         Show          off
       }
       Parameter {
